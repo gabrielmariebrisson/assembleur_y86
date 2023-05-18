@@ -1,0 +1,21 @@
+        .pos 0
+init:   irmovl stack,%esp
+            
+            
+            .pos 0 #adresse de départ
+            mrmovl a,%eax 
+            rmmovl %eax, c #place dans la mémoire la valeur du registre c
+            halt #met fin au programme pour eviter qu'il exécute la mémoire
+
+
+
+
+        .pos 0x100 #adresse de la memoire
+a:      .long 29 #a=29
+c:      .long 0 #c=0
+
+
+      
+
+        .pos 0x200
+stack:

@@ -1,0 +1,9 @@
+.pos 0
+init:   irmovl stack,%esp
+        irmovl 667,%ecx
+label : loop label
+
+        halt
+
+        .pos 0x200
+stack:

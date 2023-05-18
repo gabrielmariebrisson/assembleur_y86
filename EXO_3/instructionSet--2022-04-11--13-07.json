@@ -1,0 +1,214 @@
+{
+"instructionSet" : [
+  {
+    "name": "nop",
+    "icode": 0,
+    "ifun": 0,
+    "args": ""
+  },
+  {
+    "name": "halt",
+    "icode": 1,
+    "ifun": 0,
+    "args": ""
+  },
+  {
+    "name": "rrmovl",
+    "icode": 2,
+    "ifun": 0,
+    "args": "rA,rB"
+  },
+  {
+    "name": "irmovl",
+    "icode": 3,
+    "ifun": 0,
+    "args": "valC,rB"
+  },
+  {
+    "name": "rmmovl",
+    "icode": 4,
+    "ifun": 0,
+    "args": "rA,valC?(rB)"
+  },
+  {
+    "name": "rmmovl",
+    "icode": 4,
+    "ifun": 0,
+    "args": "rA,valC"
+  },
+  {
+    "name": "mrmovl",
+    "icode": 4,
+    "ifun": 1,
+    "args": "valC?(rB),rA"
+  },
+  {
+    "name": "mrmovl",
+    "icode": 4,
+    "ifun": 1,
+    "args": "valC,rA"
+  },
+  {
+    "name": "addl",
+    "icode": 6,
+    "ifun": 0,
+    "args": "rA,rB"
+  },
+  {
+    "name": "subl",
+    "icode": 6,
+    "ifun": 1,
+    "args": "rA,rB"
+  },
+  {
+    "name": "andl",
+    "icode": 6,
+    "ifun": 2,
+    "args": "rA,rB"
+  },
+  {
+    "name": "xorl",
+    "icode": 6,
+    "ifun": 3,
+    "args": "rA,rB"
+  },
+  {
+    "name": "sall",
+    "icode": 6,
+    "ifun": 4,
+    "args": "rA,rB"
+  },
+  {
+    "name": "sarl",
+    "icode": 6,
+    "ifun": 5,
+    "args": "rA,rB"
+  },
+  {
+    "name": "jmp",
+    "icode": 7,
+    "ifun": 0,
+    "args": "valC"
+  },
+  {
+    "name": "jle",
+    "icode": 7,
+    "ifun": 1,
+    "args": "valC"
+  },
+  {
+    "name": "jl",
+    "icode": 7,
+    "ifun": 2,
+    "args": "valC"
+  },
+  {
+    "name": "je",
+    "icode": 7,
+    "ifun": 3,
+    "args": "valC"
+  },
+  {
+    "name": "jne",
+    "icode": 7,
+    "ifun": 4,
+    "args": "valC"
+  },
+  {
+    "name": "jge",
+    "icode": 7,
+    "ifun": 5,
+    "args": "valC"
+  },
+  {
+    "name": "jg",
+    "icode": 7,
+    "ifun": 6,
+    "args": "valC"
+  },
+  {
+    "name": "call",
+    "icode": 8,
+    "ifun": 0,
+    "args": "valC"
+  },
+  {
+    "name": "ret",
+    "icode": 8,
+    "ifun": 1,
+    "args": ""
+  },
+  {
+    "name": "pushl",
+    "icode": 8,
+    "ifun": 2,
+    "args": "rA"
+  },
+  {
+    "name": "popl",
+    "icode": 8,
+    "ifun": 3,
+    "args": "rA"
+  },
+  {
+    "name": "iaddl",
+    "icode": 12,
+    "ifun": 0,
+    "args": "valC,rB"
+  },
+  {
+    "name": "isubl",
+    "icode": 12,
+    "ifun": 1,
+    "args": "valC,rB"
+  },
+  {
+    "name": "iandl",
+    "icode": 12,
+    "ifun": 2,
+    "args": "valC,rB"
+  },
+  {
+    "name": "ixorl",
+    "icode": 12,
+    "ifun": 3,
+    "args": "valC,rB"
+  },
+  {
+    "name": "isall",
+    "icode": 12,
+    "ifun": 4,
+    "args": "valC,rB"
+  },
+  {
+    "name": "isarl",
+    "icode": 12,
+    "ifun": 5,
+    "args": "valC,rB"
+  },
+  {
+    "name": "decl",
+    "icode": 13,
+    "ifun": 1,
+    "args": "rA"
+  },
+  {
+    "name": "ncall",
+    "icode": 10,
+    "ifun": 1,
+    "args": "valC"
+  },
+  {
+    "name": "nret",
+    "icode": 11,
+    "ifun": 1,
+    "args": ""
+  },
+  {
+    "name": "loop",
+    "icode": 9,
+    "ifun": 0,
+    "args": "valC"
+  }
+]
+}

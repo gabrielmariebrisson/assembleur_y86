@@ -1,0 +1,12 @@
+.pos 0
+init:   irmovl stack,%esp
+        irmovl 5,%eax
+        pushl %eax
+        popl %ebx
+        call test
+        halt
+
+test:irmovl 1,%ecx
+
+        .pos 0x200
+stack:
